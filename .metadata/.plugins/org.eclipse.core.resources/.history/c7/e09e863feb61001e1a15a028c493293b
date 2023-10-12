@@ -1,0 +1,52 @@
+package com.RadioButtons;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class RadioButtonsTestingAssignment extends BaseTest {
+
+	//@Test(description="Validating Group1 Radio Buttons")
+		public void groupOfRadioButtonsTesting() throws InterruptedException
+		{
+		/*
+		<input type="radio" name="group1" value="Milk">
+		<input type="radio" name="group1" value="Butter" checked="">
+		<input type="radio" name="group1" value="Cheese">
+
+		<input type="radio" name="group2" value="Water">
+		<input type="radio" name="group2" value="Beer">
+		<input type="radio" name="group2" value="Wine" checked="">
+		*/
+
+		// common property of the first Group1 radio buttons
+
+		By groupOfRadioButtonsProperty=By.xpath("/html/body/div[2]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div");
+		List<WebElement>groupOfRadioButtons=driver.findElements(groupOfRadioButtonsProperty);
+		
+		// to goto every Radio Button
+		for(int groupOfRadioButtonClick=0;groupOfRadioButtonClick<groupOfRadioButtons.size();groupOfRadioButtonClick++)
+		{
+		// going to a Radio Button and performing click operation
+		groupOfRadioButtons.get(groupOfRadioButtonClick).click();
+		// to goto every Radio Button and get the Status of it
+		for(int groupOfRadioButtonsStatus=0;groupOfRadioButtonsStatus<groupOfRadioButtons.size();groupOfRadioButtonsStatus++)
+		{
+		// Thread.sleep(5000);
+		String groupOfRadioButtonName=groupOfRadioButtons.get(groupOfRadioButtonsStatus).getAttribute("value");
+		String statusOfRadioButton=groupOfRadioButtons.get(groupOfRadioButtonsStatus).getAttribute("checked");
+		System.out.println(groupOfRadioButtonName+" - "+statusOfRadioButton);
+		}
+		System.out.println();
+		}
+		}
+		
+		public static void main(String[] args) throws InterruptedException {
+		RadioButtonsTestingAssignment radioButtonsTest = new RadioButtonsTestingAssignment();
+		radioButtonsTest.applicationLaunch();
+		radioButtonsTest.groupOfRadioButtonsTesting();
+		radioButtonsTest.applicationClose();
+		
+		}
+		}
+
