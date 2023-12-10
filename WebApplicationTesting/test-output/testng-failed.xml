@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DropDown.DropDownTesting">
+      <class name="com.Xpath.Amazon_CustomerService_Click">
         <methods>
-          <include name="applicationLaunch"/>
-          <include name="applicationClose"/>
-          <include name="gettingDropDownLanguagesListNames"/>
+          <include name="setUp"/>
+          <include name="customerServiceTest"/>
         </methods>
-      </class> <!-- com.DropDown.DropDownTesting -->
+      </class> <!-- com.Xpath.Amazon_CustomerService_Click -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

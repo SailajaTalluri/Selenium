@@ -40,11 +40,13 @@ public class TSRTC_HandlingAlert {
 		String alertWindowTextMessage=alertWindow.getText();
 		System.out.println("The text of an alert Window is :- "+alertWindowTextMessage);
 		
-		alertWindow.accept(); //will perform operation on the OK button
+		alertWindow.accept(); //will perform operation on the OK 
+		//press ok button alert window ok enter accept will show and press the accept click 
 		
 		//alertWindow.dismiss(); //will perform operation on the Cancel Button
 		
 		//alertWindow.sendKeys("Testing"); //will perform operation to send the test data into alert		
+	   
 	}
 	
 public static void main(String[] args) throws Exception  {

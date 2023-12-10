@@ -7,6 +7,7 @@ public class WebTable_CapturingCompleteWebTableData extends BaseTest{
 
 	public void CapturingCompleteWebTableData()
 	{
+		
 		// First Row of First Cell
 		// /html/body/div[5]/section[1]/div/section/div[1]/div/table/tbody/tr[1]/td[1]
 

@@ -42,7 +42,7 @@ public class RadioButtonsTestingAssignment extends BaseTest {
 	for(int group2RadioButtonClick=0;group2RadioButtonClick<group2RadioButtons.size();group2RadioButtonClick++)
 	{
 	// going to a Radio Button and performing click operation
-	group1RadioButtons.get(group2RadioButtonClick).click();
+	group2RadioButtons.get(group2RadioButtonClick).click();
 	// to goto every Radio Button and get the Status of it
 	for(int group2RadioButtonsStatus=0;group2RadioButtonsStatus<group2RadioButtons.size();group2RadioButtonsStatus++)
 	{
